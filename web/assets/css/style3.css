@@ -1,0 +1,1609 @@
+/*--------------------- Copyright (c) 2020 ----------------------- 
+[Master Stylesheet] 
+Project: Multifarious GYM
+Version: 1.0.0 
+Author: Kamleshyadav
+ ------------------------------------------------------------------- 
+[Table of contents] 
+	1. Global CSS Start
+	2. Comman CSS Start
+    3. Preloader CSS Start
+    4. Header CSS Start
+    5. Banner CSS Start
+    6. Call To Action CSS Start
+    7. About CSS Start
+    8. Counter CSS Start
+    9. Service CSS Start
+    10. Plans CSS Start
+    11. Time Table CSS Start
+    12. Team CSS Start
+    13. Contact CSS Start
+    14. Gallery CSS Start
+    15. Testimonial CSS Start
+    16. Blog CSS Start
+    17. Newsletter CSS Start
+    18. Footer CSS Start
+    17. Responsive CSS Start
+-------------------------------------------------------------------*/
+/********************************************************
+    1. Global CSS Start
+********************************************************/
+body {
+    color: var(--main-gray-version3);
+    background: var(--main-bg-color);
+}
+a, a:hover, a:focus {
+	color: var(--main-link-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-link-color);
+    font-weight: 500;
+}
+h4 {
+    font-size: 22px;
+}
+/********************************************************
+    2. Comman CSS Start
+********************************************************/
+.dr_btn {
+    background: var(--main-royal-blue);
+    color: var(--main-bg-color);
+    display: inline-block;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 15px;
+    min-width: 170px;
+    margin: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    letter-spacing: .5px;
+    font-weight: 400;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+}
+.dr_btn:hover, .dr_btn:focus {
+    color: var(--main-bg-color);
+    background: var(--main-royal-red);
+}
+.dr_heading {
+    margin-bottom: 41px;
+}
+.dr_heading h4 {
+    font-size: 42px;
+    font-weight: 700;
+    position: relative;
+    margin: 0 0 2px;
+    padding: 0;
+    color: var(--main-link-color);
+}
+.dr_heading.white h4, .dr_heading.white p {
+    color: var(--main-bg-color);
+}
+.dr_heading p {
+    margin-top: 8px;
+}
+.dr_subHeading {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--main-link-color);
+    margin-bottom: 12px;
+}
+.dr_subTitle {
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: var( --main-royal-red);
+    font-size: 16px;
+}
+.dr_readMoreBtn {
+    color: var(--main-royal-blue);
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 5px;
+}
+.dr_readMoreBtn:hover {
+    color: var(--main-royal-blue);
+    letter-spacing: 1px;
+}
+.dr_readMoreBtn:before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    background: var(--main-royal-blue);
+    width: 100%;
+    height: 1px;
+    opacity: .6;
+}
+#scroll {
+    background: var(--main-royal-blue);
+    color: var(--main-bg-color);
+}
+/********************************************************
+    3. Preloader CSS Start
+********************************************************/
+.preloader_active .preloader_holder {
+    background-color: var(--main-bg-color);
+}
+.preloader_active .preloader_holder .preloader span {
+    box-shadow: 0px 0px 0px 0px var(--main-royal-blue);
+}
+@-webkit-keyframes loadingCircles{
+    0%{-webkit-transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-royal-blue);}
+    100%{-webkit-transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-royal-blue);}
+}
+@-moz-keyframes loadingCircles{
+    0%{-moz-transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-royal-blue);}
+    100%{-moz-transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-royal-blue);}
+}
+@keyframes loadingCircles{
+    0%{transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-royal-blue);}
+    100%{transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-royal-blue);}
+}
+.preloader_open:before, .preloader_open:after {
+    background-color: var(--main-bg-color);
+}
+/********************************************************
+    4. Header CSS Start
+********************************************************/
+header {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    z-index: 9;
+    background: var(--main-bg-color);
+}
+.dr_header_top {
+    background: var(--main-bg-color);
+    border-bottom: 1px solid var(--main-gray-version4);
+    color: var(--main-gray-version5);
+}
+.dr_header_info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.dr_header_info ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.dr_header_info ul li {
+    margin-left: 20px;
+    padding: 6px 0;
+}
+.dr_header_top .dr_btn {
+    min-width: 190px;
+    border-radius: 0;
+}
+.dr_header_icon svg {
+    height: 18px;
+    fill: var(--main-royal-red);
+}
+.dr_header_info ul li:first-child {
+    margin-left: 0;
+}
+.dr_header_info ul li a {
+    color: var(--main-gray-version5);
+    display: inline-block;
+}
+.dr_header_icon {
+    margin-right: 3px;
+}
+.dr_header_wrapper {
+    padding: 17px 0 18px;
+}
+.dr_header_info ul li a > span {
+    margin-right: 4px;
+    font-weight: 700;
+}
+.searchBtn, .searchBtn:focus, .searchBtn:hover {
+    color: var(--main-royal-blue);
+    padding-left: 10px;
+}
+.dr_header_wrapper .dr_btn {
+    min-width: 200px;
+    margin: 0 0 0 30px;
+    padding: 0 15px 0;
+    letter-spacing: 0;
+}
+.dr_search_wrap .display_flex {
+    align-items: center;
+}
+.dr_search_wrap .display_flex li {
+    display: flex;
+}
+/********************************************************
+    5. Banner CSS Start
+********************************************************/
+.dr_banner_section {
+    background-color: var(--main-border-color);
+    padding: 215px 0 365px;
+    position: relative;
+    background: var(--main-royal-light);
+}
+.dr_banner_section.slide1 {
+    background: url(../images/index5/slide1.jpg);
+}
+.dr_banner_section.slide2 {
+    background: url(../images/index5/slide2.jpg);
+}
+.dr_banner_section.slide3 {
+    background: url(../images/index5/slide3.jpg);
+}
+.dr_banner_text h1 {
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 75px;
+    color: var(--main-black5);
+}
+.dr_banner_text h1 span {
+    color: var( --main-royal-red);
+    font-weight: 700;
+    display: inline-block;
+    width: 100%;
+}
+.dr_banner_text h4 {
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.dr_banner_text h4 svg {
+    height: 26px;
+    fill: var( --main-royal-red);
+    margin-right: 15px;
+    vertical-align: sub;
+}
+.dr_banner_text .dr_btn {
+    margin: 10px 0 0;
+}
+.dr_banner_button {
+    position: absolute;
+    top: 36%;
+    left: 50px;
+    right: 50px;
+}
+.dr_banner_button > div {
+    background: var(--main-gray-version6);
+    color: var(--main-bg-color);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    font-size: 40px;
+    line-height: 60px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    border-radius: 50%;
+}
+.dr_banner_button > div:hover {
+    background: var(--main-royal-red);
+}
+.ButtonPrev {
+    left: 0;
+    padding: 0 3px 0 0;
+}
+.ButtonNext {
+    right: 0;
+    padding: 0 2px 0 0;
+}
+.dr_banner_button > div, .dr_banner_button > div:hover {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    6. Call To Action CSS Start
+********************************************************/
+.dr_callToAction_wrapper {
+    margin-top: -150px;
+    position: relative;
+    z-index: 9;
+}
+.dr_callToAction_bg {
+    color: var(--main-bg-color);
+    width: 100%;
+    display: inline-block;
+    background-image: url(../images/index5/callToActionBg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.dr_callToAction_bg_inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(249, 87, 89, 0.90);
+}
+.dr_action_section {
+    position: relative;
+    padding: 50px 35px 41px;
+}
+.dr_action_section.center:before, .dr_action_section.center:after {
+    content: "";
+    background: rgba(255, 255, 255, 0.28);
+    height: 185px;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+}
+.dr_action_section.center:after {
+    right: 0;
+}
+.dr_action_section.center:before {
+    left: 0;
+}
+.dr_action_section span {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.dr_action_section span svg {
+    fill: var(--main-bg-color);
+    height: 40px;
+}
+.dr_action_section h3 {
+    color: var(--main-bg-color);
+    font-size: 26px;
+    font-weight: 700;
+}
+.dr_action_section .title_border {
+    margin: 4px 0 5px;
+}
+/********************************************************
+    7. About CSS Start
+********************************************************/
+.dr_about_wrapper {
+    background: var(--main-bg-color);
+    padding: 80px 0 0;
+}
+.dr_about_wrapper .row {
+    align-items: flex-end;
+}
+.dr_about_img img {
+    position: relative;
+}
+.dr_about_text {
+    margin-top: 20px;
+    padding-bottom: 71px;
+}
+.dr_about_text h4 {
+    margin: 11px 0 0;
+}
+/********************************************************
+    8. Counter CSS Start
+********************************************************/
+.dr_counter_wrapper {
+    width: 100%;
+    display: inline-block;
+    background-image: url(../images/index5/counter_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 69px 0 43px;
+}
+.dr_counter_wrapper:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--main-royal-blue);
+    opacity: .94;
+}
+.dr_counter_icon {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 26px;
+}
+.dr_counter_icon img {
+    position: absolute;
+    opacity: .3;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.dr_counter_icon h1 {
+    color: var(--main-bg-color);
+    font-size: 56px;
+    line-height: 100px;
+    position: relative;
+    z-index: 1;
+    font-weight: 900;
+}
+.counter_item {
+    font-size: 22px;
+    color: var(--main-bg-color);
+}
+/********************************************************
+    9. Service CSS Start
+********************************************************/
+.dr_services_wrapper {
+    padding: 60px 0 50px;
+    background: var(--main-bg-color);
+}
+.dr_services_section {
+    background-color: var(--main-bg-color);
+    padding: 50px 20px 45px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+    position: relative;
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.dr_services_section > img {
+    margin: 8px auto 8px;
+}
+.dr_icon_bg {
+    margin-bottom: 26px;
+    display: inline-block;
+}
+.dr_icon_bg svg {
+    height: 60px;
+    fill: var(--main-royal-red);
+}
+.dr_services_section h4 {
+    font-weight: 700;
+}
+.dr_services_section:hover {
+    background-color: var(--main-royal-blue);
+    color: var(--main-bg-color);
+}
+.dr_services_section:hover .dr_icon_bg svg {
+    fill: var(--main-bg-color);
+}
+.dr_services_section:hover h4, .dr_services_section:hover .dr_readMoreBtn {
+    color: var(--main-bg-color);
+}
+.dr_services_section:hover .dr_readMoreBtn:before {
+    background: var(--main-bg-color);
+}
+.service_hover_border {
+    display: none;
+}
+.dr_services_section:hover .service_hover_border {
+    display: block;
+}
+.dr_services_section:hover .service_border {
+    display: none;
+}
+.dr_services_section:hover, .dr_services_section, .dr_services_section:hover .dr_icon_bg svg, .dr_icon_bg svg, .dr_services_section h4, .dr_services_section:hover h4  {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    10. Plans CSS Start
+********************************************************/
+.dr_plans_wrapper {
+    background-color: var(--main-gray-version7);
+    padding: 80px 0 0;
+    position: relative;
+}
+.dr_plans_box {
+    background: var(--main-royal-light-blue);
+    color: var(--main-bg-color);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+.dr_plans_inner {
+    background: var(--main-royal-blue);
+    padding: 40px;
+}
+.dr_plans_inner h4 {
+    font-weight: 700;
+    color: var(--main-bg-color);
+}
+.dr_plans_inner ul li {
+    width: 49%;
+    display: inline-block;
+    padding: 0 10px;
+}
+.dr_plans_inner .row {
+    margin: 0 -10px;
+}
+.dr_plans_inner ul {
+    margin: 11px 0 0px;
+}
+.dr_plans_inner ul li a {
+    width: 100%;
+    display: inline-block;
+    background: var(--main-royal-light-blue);
+    margin-top: 10px;
+    color: var(--main-bg-color);
+    position: relative;
+    padding: 10px 15px 10px 35px;
+    border: none;
+    border-radius: 3px;
+}
+.dr_plans_inner ul li a:before, .dr_plans_inner ul li a:after {
+    background: var(--main-bg-color);
+    position: absolute;
+    content: "";
+}
+.dr_plans_inner ul li a:before {
+    height: 1px;
+    width: 24px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.dr_plans_inner ul li a:after {
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: 50%;
+    left: 19px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.dr_plans_contact_info > span {
+    display: inline-block;
+    border: 1px solid var(--main-lightBlue);
+    padding: 6px;
+    border-radius: 50%;
+}
+.dr_plans_contact_info > span > span {
+    width: 70px;
+    height: 70px;
+    line-height: 60px;
+    display: inline-block;
+    text-align: center;
+    background: var(--main-bg-color);
+    border-radius: 50%;
+    border: 6px solid var(--main-lightBlue);
+    position: relative;
+}
+.dr_plans_contact_info span svg {
+    height: 30px;
+    fill: var(--main-royal-light-blue);
+}
+.dr_plans_contact_info {
+    padding: 24px 40px 21px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.dr_plans_number {
+    width: calc(100% - 120px);
+}
+.dr_plans_number h3 {
+    color: var(--main-bg-color);
+    font-size: 26px;
+    font-weight: 700;
+}
+.dr_plans_number a {
+    color: var(--main-bg-color);
+    font-size: 42px;
+    font-weight: 900;
+    display: inline-block;
+    margin-top: 6px;
+    line-height: 42px;
+}
+.dr_plans_detail .dr_subTitle {
+    margin: 0;
+}
+.dr_plans_detail {
+    margin-bottom: 41px;
+}
+.dr_plans_wrapper .row {
+    align-items: flex-end;
+}
+.dr_plans_img img {
+    width: 75%;
+    margin: auto;
+}
+/********************************************************
+    11. Time Table CSS Start
+********************************************************/
+.dr_table_section {
+    padding: 69px 0 80px;
+    background: var(--main-bg-color);
+}
+.dr_time_table table thead {
+    background: var(--main-royal-red);
+    color: var(--main-bg-color);
+}
+.dr_time_table table thead th {
+    border-color: rgba(255, 255, 255, 0.28);
+    border-bottom: 1px solid var(--main-royal-red);
+    padding: 15px 6px;
+}
+.dr_time_table table tbody td {
+    padding: 34px 6px 31px;
+    vertical-align: middle;
+    position: relative;
+}
+.dr_time_table table tbody td span {
+    font-weight: 700;
+}
+.dr_time_table table tbody td p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--main-royal-red);
+    height: 35px;
+    line-height: 40px;
+    color: var(--main-bg-color);
+    visibility: hidden;
+    opacity: 0;
+}
+.dr_time_table table tbody td p:before {
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 8px solid var(--main-royal-red);
+    top: -6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20px;
+}
+.dr_time_table table tbody td.table_padder:hover {
+    padding-top: 6px;
+}
+.dr_time_table table tbody td:hover p {
+    visibility: visible;
+    opacity: 1;
+}
+.dr_time_table table tbody td.table_padder:before {
+    position: absolute;
+    content: "";
+    display: none;
+    background-image: url(../images/index5/table_border.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -50px;
+    left: -42px;
+    bottom: -50px;
+    right: -42px;
+}
+.dr_time_table table tbody td.table_padder:hover:before {
+    display: block;
+}
+.dr_time_table table.table {
+    word-break: normal;
+    white-space: nowrap;
+    margin: 0;
+    overflow: hidden;
+}
+.dr_time_table table tbody td, .dr_time_table table tbody td:hover, .dr_time_table table tbody td:hover p, .dr_time_table table tbody td p {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    12. Team CSS Start
+********************************************************/
+.dr_team_wrapper {
+    width: 100%;
+    display: inline-block;
+    background-image: url(../images/index5/team_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 69px 0 325px;
+}
+.dr_team_wrapper:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--main-royal-blue);
+    opacity: .94;
+}
+.dr_team_section {
+    position: relative;
+    background: var(--main-bg-color);
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.dr_team_identity span {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background: var(--main-royal-red);
+    border: 3px solid var(--main-bg-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 43px;
+    position: relative;
+    z-index: 1;
+}
+.dr_team_img img {
+    width: 100%;
+}
+.dr_team_identity {
+    display: flex;
+    margin-top: -25px;
+    padding: 0 15px;
+    align-items: flex-end;
+}
+.dr_team_identity svg {
+    fill: var(--main-bg-color);
+    height: 25px;
+    width: 25px;
+}
+.dr_team_identity h6 {
+    background: var(--main-royal-red);
+    color: var(--main-bg-color);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px 20px 5px 45px;
+    border: none;
+    border-radius: 0 0 25px 6px;
+    margin: 0 0 0 -30px;
+    min-width: 140px;
+    text-align: center;
+}
+.dr_team_info > a {
+    color: var(--main-link-color);
+    font-weight: 700;
+    padding: 14px 0 7px;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+}
+.dr_team_info ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.dr_team_info ul li a {
+    color: var(--main-gray-version8);
+    display: inline-block;
+    padding: 0;
+    width: 28px;
+}
+.dr_team_info ul li a:hover {
+    color: var(--main-royal-red);
+    display: inline-block;
+    padding: 0 6px;
+}
+.team_slider.swiper-container {
+    cursor: all-scroll;
+}
+.dr_team_section {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    13. Contact CSS Start
+********************************************************/
+.dr_contact_form h4 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.dr_form_field::placeholder, .dr_form_field::-webkit-input-placeholder {
+	color: var(--main-gray-version9);
+}
+.dr_form_field:-moz-placeholder, .dr_form_field:-ms-input-placeholder {
+	color: var(--main-gray-version9);
+}
+.dr_contact_form .dr_btn {
+    margin-top: 21px;
+}
+.dr_contact_info_wrapper {
+    background: var(--main-royal-red);
+    color: var(--main-bg-color);
+    padding: 45px 30px 36px 30px;
+    margin-right: -1px;
+}
+.dr_contact_admin img {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 100%;
+}
+.dr_contact_admin {
+    text-align: center;
+}
+.dr_contact_admin h4 {
+    font-size: 20px;
+    color: var(--main-bg-color);
+    margin: 12px 0 11px;
+    line-height: 30px;
+}
+.dr_contact_admin ul li {
+    display: inline-block;
+    margin: 0 3px;
+}
+.dr_contact_admin ul li a {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 100%;
+    background: var(--main-blur-red);
+    display: inline-block;
+    line-height: 45px;
+}
+.dr_contact_admin ul li a:hover {
+    background: var(--main-bg-color);
+}
+.dr_contact_admin ul li a svg {
+    height: 20px;
+    fill: var(--main-bg-color);
+}
+.dr_contact_admin ul li a:hover svg {
+    fill: var(--main-royal-red);
+}
+.dr_contact_admin > a {
+    color: var(--main-bg-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 16px 0 0;
+    display: inline-block;
+}
+.dr_contact_time {
+    position: relative;
+    padding: 37px 0 0;
+    margin: 36px 0 0;
+}
+.dr_contact_time:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    right: -30px;
+    background: var(--main-bg-color);
+    height: 1px;
+    opacity: .2;
+}
+.dr_contact_time h4 {
+    text-align: center;
+    color: var(--main-bg-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.dr_contact_time ul {
+    display: inline-block;
+    width: 100%;
+}
+.dr_contact_time ul li {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dr_contact_wrapper {
+    margin-top: -275px;
+}
+.dr_contant_container {
+    background: var(--main-bg-color);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.dr_contact_form {
+    padding: 45px 20px 45px 50px;
+}
+.dr_form_field {
+    border: 1px solid var(--main-gray-version9);
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+textarea.dr_form_field {
+    height: 125px;
+    padding: 15px 20px;
+    resize: none;
+}
+.dr_contact_admin_img:before {
+    content: "";
+    background: var(--main-green-version1);
+    width: 18px;
+    height: 18px;
+    border: 3px solid var(--main-royal-red);
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: -8px;
+    border-radius: 50%;
+}
+/********************************************************
+    14. Gallery CSS Start
+********************************************************/
+.dr_gallery_wrapper {
+    padding: 69px 0 50px;
+}
+.dr_gallery_section a {
+    position: relative;
+    display: inline-block;
+}
+.dr_gallery_section a:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+.dr_gallery_section a:hover:after {
+    opacity: 1;;
+}
+.dr_gallery_section img, .dr_gallery_section, .dr_gallery_section a {
+    width: 100%;
+}
+.dr_gallery_section a:after, .dr_gallery_section a:hover:after {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/********************************************************
+    15. Testimonial CSS Start
+********************************************************/
+.dr_testimonial_wrapper {
+    width: 100%;
+    display: inline-block;
+    background-image: url(../images/index5/testimonial_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 69px 0 80px;
+}
+.dr_testimonial_wrapper:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--main-royal-blue);
+    opacity: .94;
+}
+.dr_testimonial_section {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--main-bg-color);
+    padding: 50px 50px 35px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 34px;
+    border: none;
+    border-radius: 6px;
+}
+.dr_testimonial_icon svg {
+    height: 50px;
+    fill: var(--main-bg-color);
+}
+.dr_client_quote h4 {
+    color: var(--main-bg-color);
+    font-size: 22px;
+}
+.dr_testimonial_icon {
+    margin-bottom: 27px;
+}
+.dr_client_quote {
+    display: flex;
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.pagination span.swiper-pagination-bullet {
+    width: 20px;
+    height: 3px;
+    border-radius: 0;
+    margin: 0 3px;
+    background: var(--main-bg-color);
+    opacity: .3;
+}
+.pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--main-bg-color);
+    opacity: 1;
+}
+.dr_testimonial_button {
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    width: 200px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.dr_testimonial_button > div {
+    width: 50px;
+    font-size: 22px;
+    position: absolute;
+    cursor: pointer;
+    color: var(--main-bg-color);
+    opacity: .6;
+}
+.dr_testimonial_button > div:before {
+    content: "";
+    position: absolute;
+    background: var(--main-bg-color);
+    width: 18px;
+    height: 2px;
+    top: 11px;
+    opacity: .6;
+}
+.testTwoButtonPrev {
+    left: 0;
+}
+.testTwoButtonNext {
+    right: 0;
+    text-align: right;
+}
+.testTwoButtonNext:before {
+    right: 1px;
+}
+.dr_testimonial_button > div:hover {
+    opacity: 1;
+}
+.dr_testimonial_button > div:hover:before {
+    width: 30px;
+    opacity: 1;
+}
+.dr_testimonial_button > div:hover, .dr_testimonial_button > div, .dr_testimonial_button > div:hover:before, .dr_testimonial_button > div:before {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/********************************************************
+    16. Blog CSS Start
+********************************************************/
+.dr_blog_wrapper {
+    padding: 69px 0 45px;
+}
+.dr_blog_img {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.dr_blog_img img {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+}
+.dr_blog_info li {
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+}
+.dr_blog_info li:before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    background: var(--main-gray-version3);
+    width: 3px;
+    height: 3px;
+    border: none;
+    border-radius: 50%;
+    top: 10px;
+}
+.dr_blog_info li:first-child:before {
+    content: unset;
+}
+.dr_blog_info li:first-child {
+    padding-left: 0;
+}
+.blog_text {
+    padding: 24px 0 0;
+}
+.dr_blog_info {
+    margin-bottom: 10px;
+}
+.dr_blog_info a {
+    color: var(--main-gray-version3);
+}
+.dr_blog_title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-link-color);
+    margin-bottom: 7px;
+}
+.dr_blog_title:hover {
+    color: var(--main-royal-blue);
+}
+.dr_blog_thumb {
+    background: var(--main-bg-color);
+    margin-bottom: 30px;
+}
+.dr_blog_thumb .dr_readMoreBtn {
+    margin: 0;
+}
+.dr_blog_title, .dr_blog_title:hover {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/********************************************************
+    17. Newsletter CSS Start
+********************************************************/
+.dr_newsletter_wrapper {
+    padding: 68px 0 41px;
+    background-image: url(../images/index5/newsletter_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    color: var(--main-bg-color);
+}
+.dr_newsletter_wrapper:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--main-royal-blue);
+    opacity: .94;
+}
+.dr_newsletter_heading h1 {
+    color: var(--main-bg-color);
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.dr_subscribe_holder {
+    width: 100%;
+    display: flex;
+}
+.dr_subscribe_holder input {
+    border: none;
+    height: 50px;
+    padding: 0 30px;
+    width: 100%;
+    background: var(--main-lightBlue-version);
+    color: var(--main-bg-color);
+    border-radius: 3px 0  0 3px;
+}
+.dr_subscribe_holder input::placeholder {
+    color: var(--main-bg-color);
+    opacity: .3;
+}
+.dr_subscribe_holder .dr_btn {
+    margin: 0;
+    color: var(--main-royal-blue);
+    background: var(--main-bg-color);
+    border-radius: 0 3px 3px 0;
+}
+.dr_subscribe_holder .dr_btn:hover {
+    color: var(--main-bg-color);
+    background: var(--main-royal-red);
+}
+/********************************************************
+    18. Footer CSS Start
+********************************************************/
+.dr_footer_main_wrapper {
+    padding: 80px 0 0;
+    background-image: url(../images/index5/footer_bg_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    color: var(--main-gray-version12);
+}
+.dr_footer_main_wrapper:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(37, 39, 46, 0.96);
+}
+.dr_footer_wrapper {
+    position: relative;
+}
+.dr_footer_title {
+    position: relative;
+    color: var(--main-gray-version12);
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+}
+img.footer_logo {
+    margin-bottom: 24px;
+}
+.dr_footer_heading {
+    margin-bottom: 22px;
+}
+.dr_address_wrap {
+    margin-top: 6px;
+}
+.dr_address_wrap h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-royal-red);
+    margin-bottom: 2px;
+}
+.dr_footer_twitter ul li {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    color: var(--main-bg-color);
+}
+.dr_footer_twitter li:last-child {
+    margin-bottom: 0;
+}
+.dr_footer_twitter ul li > span {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 22px;
+    color: var(--main-royal-red);
+}
+.dr_footer_post li > a {
+    width: calc(100% - 95px);
+    display: inline-block;
+}
+.dr_twitter_date, .dr_post_date {
+    color: var(--main-royal-red);
+}
+.dr_footer_post li {
+    position: relative;
+    color: var(--main-link-color);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 5px;
+}
+.dr_footer_post li:last-child {
+    margin-bottom: 0;
+}
+.dr_footer_post li img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.dr_footer_menu ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 13px;
+}
+.dr_footer_menu ul li:last-child {
+    margin-bottom: 0;
+}
+.dr_footer_menu ul li:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    font-size: 20px;
+}
+.dr_widgets a {
+    color: var(--main-gray-version12);
+}
+.dr_widgets a:hover, .dr_copyright_wrapper a {
+    color: var(--main-royal-red);
+}
+.dr_widgets_contact {
+    text-align: center;
+    color: var(--main-gray-version12);
+    padding: 0 15px;
+}
+.dr_widgets_contact a {
+    color: var(--main-gray-version12);
+    display: inline-block;
+    width: 100%;
+}
+.dr_widgets_contact span {
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+    border: 6px solid var(--main-gray-version13);
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+}
+.dr_footer_info_text {
+    margin-top: 24px;
+}
+.dr_widgets_contact span svg {
+    height: 30px;
+    width: 30px;
+    fill: var(--main-gray-version12);
+}
+.dr_widgets_contact:hover span svg, .dr_widgets_contact:hover span {
+    fill: var(--main-royal-red);
+}
+.dr_widgets_contact:hover span {
+    border-color: var(--main-royal-red);
+}
+.footer_information {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding-bottom: 12px;
+    position: relative;
+}
+.footer_information:before {
+    content: "";
+    background: var(--main-gray-version10);
+    height: 1px;
+    left: 15px;
+    right: 15px;
+    position: absolute;
+    bottom: 0;
+}
+.dr_widgets_contact:hover span svg, .dr_widgets_contact:hover span, .dr_widgets_contact span svg, .dr_widgets_contact span {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.dr_copyright_wrapper {
+    padding: 12px 0 9px;
+    color: var(--main-bg-color);
+    position: relative;
+    margin-top: 50px;
+    border-top: 1px solid var(--main-gray-version10);
+}
+/********************************************************
+	17. Responsive CSS Start
+********************************************************/
+@media (min-width: 991.98px) {
+    ul.sub_menu {
+        top: 50px;
+    }
+    .dr_heading {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dr_banner_section.slide1, .dr_banner_section.slide2, .dr_banner_section.slide3 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .main_menu_wrapper ul > li:hover > a, .main_menu_wrapper ul > li.active > a {
+        color: var(--main-royal-blue);
+    }
+}
+
+@media (min-width: 1200px) {
+	.dr_newsletter_form {
+        padding-left: 6%;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .dr_header_top .dr_btn {
+        display: none;
+    }
+    .dr_header_info ul {
+        justify-content: center;
+    }
+    .dr_action_section {
+        padding: 50px 15px 41px;
+    }
+    .dr_plans_number a {
+        font-size: 30px;
+    }
+    .dr_time_table table tbody td.table_padder:before {
+        content: unset;
+    }
+    .dr_banner_button {;
+        left: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .main_menu_wrapper li.has_submenu:before, .main_menu_wrapper li.has_submenu:after {
+        background: var(--main-royal-blue);
+    }
+    .dr_banner_text {
+        padding: 0 50px;
+        text-align: center;
+    }
+    .dr_banner_text h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .dr_banner_button {
+        right: 0;
+        left: 0;
+    }
+    .dr_banner_button > div {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .dr_about_wrapper .row {
+        flex-direction: column-reverse;
+    }
+    .menu_btn {
+        padding: 18px 0 16px 0;
+    }
+    .dr_services_wrapper {
+        padding: 63px 0 50px;
+    }
+    .dr_plans_wrapper {
+        padding: 77px 0 0;
+    }
+    .dr_heading {
+        margin-bottom: 44px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .dr_action_section.center:before {
+        left: 15px;
+        height: 1px;
+        width: auto;
+        right: 15px;
+        top: 0;
+        bottom: unset;
+    }
+    .dr_action_section.center:after {
+        left: 15px;
+        height: 1px;
+        width: auto;
+        right: 15px;
+        top: unset;
+        bottom: 0;
+    }
+    .dr_action_section {
+        padding: 50px 15px 44px;
+    }
+    .dr_action_section.center {
+        padding: 51px 15px 45px;
+    }
+    .dr_callToAction_wrapper .container {
+        padding: 0 30px;
+    }
+    .dr_plans_contact_info {
+        padding: 24px 20px 21px;
+    }
+    .dr_plans_inner {
+        padding: 40px 20px;
+    }
+    .dr_plans_number h3, .dr_action_section h3, .dr_team_identity a, .dr_footer_heading {
+        font-size: 18px;
+    }
+    .dr_testimonial_section {
+        padding: 50px 15px 35px;
+    }
+    .menu_btn {
+        padding: 12px 0 0;
+    }
+    .dr_about_wrapper {
+        padding: 77px 0 0;
+    }
+    .dr_contact_form {
+        padding: 45px 15px 45px 15px;
+    }
+    .dr_banner_section {
+        padding: 94px 0 244px;
+    }
+    .dr_banner_text {
+        padding: 0 20px;
+    }
+    .dr_copyright_wrapper {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .dr_header_info ul {
+        justify-content: flex-start;
+    }
+    .dr_header_info ul li {
+        margin-left: 0;
+        font-size: 13px;
+    }
+    .dr_plans_inner ul li {
+        width: 100%;
+    }
+    .dr_plans_number {
+        width: 100%;
+        margin-top: 15px;
+    } 
+    .dr_subscribe_holder {
+        flex-wrap: wrap;
+    }   
+    .dr_subscribe_holder .dr_btn {
+        border-radius: 3px;
+        margin-top: 15px;
+        width: 100%;
+    }
+    .dr_subscribe_holder input {
+        border-radius: 3px;
+    }
+    .menu_btn {
+        padding: 12px 0 0;
+    }
+    .dr_newsletter_wrapper {
+        padding: 68px 0 50px;
+    }
+    .dr_banner_section {
+        padding: 74px 0 174px;
+    }
+    .dr_header_icon {
+        margin-right: 1px;
+        vertical-align: text-bottom;
+    }
+    .dr_header_icon svg {
+        height: 10px;
+    }
+    .dr_banner_text {
+        padding: 0;
+    }
+    .dr_banner_button {
+        display: none;
+    }
+}
